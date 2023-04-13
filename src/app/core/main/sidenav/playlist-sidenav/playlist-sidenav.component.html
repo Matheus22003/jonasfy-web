@@ -1,0 +1,43 @@
+<!-- Playlists-->
+<div class="position-sticky mt-3 playslists">
+  <div class="container-fluid" id="playslist-fixa">
+
+    <div class="d-flex justify-content-start align-items-baseline">
+      <div class="d-flex justify-content-center rounded-1 bg-dark playslist-picture-size">
+        <i class="bi bi-plus text-white my-auto"></i>
+      </div>
+      <div class="ms-2">
+        <h6 class="text-white">Criar Playslit</h6>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-start align-items-baseline my-2">
+      <div class="d-flex justify-content-center rounded-1 musicas-curtidas playslist-picture-size">
+        <i class="bi bi-heart-fill text-white my-auto"></i>
+      </div>
+      <div class="ms-2">
+        <h6 class="text-white">Músicas Curtidas</h6>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-start align-items-baseline">
+      <div class="d-flex justify-content-center rounded-1 meus-podcasts playslist-picture-size">
+        <i class="bi bi-bookmark-fill text-white my-auto"></i>
+      </div>
+      <div class="ms-2">
+        <h6 class="text-white">Seus Episódeos</h6>
+      </div>
+    </div>
+
+    <hr class="color-cinza-escuro">
+  </div>
+  <!--  border border-light-->
+  <div class="container-fluid  container-playslists">
+
+    <div *ngFor="let playslist of playlists " class="mt-2">
+      <h6 class="text-white fw-normal">{{playslist.nome}}</h6>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,29 @@
+@import '../../../../../assets/styles/sizes';
+@import '../../../../../assets/styles/colors';
+
+
+.container-play-button {
+  height: 52px;
+  width: 52px;
+}
+
+.media-control-size {
+  font-size: 32px;
+}
+
+.media-control-size-second {
+  font-size: 20px;
+}
+
+.opacity-animation {
+  opacity: 0.7;
+  transition: all .2s;
+}
+
+.opacity-animation:hover {
+  opacity: 1;
+}
+
+#playButton:hover {
+  font-size: calc(32px * 1.06);
+}

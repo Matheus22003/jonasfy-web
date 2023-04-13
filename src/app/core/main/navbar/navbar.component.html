@@ -1,0 +1,38 @@
+<nav [ngClass]="{'bg-playlist' : changeBg, 'bg-transparent, border-transparent': !changeBg}"
+     class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid d-flex">
+    <div class="d-flex">
+      <div class="page-control rounded-circle d-flex justify-content-center align-items-center me-2">
+        <fa-icon [icon]="'chevron-left'" [classes]="['text-white','cursor-pointer']"></fa-icon>
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+
+      <div class="page-control rounded-circle d-flex justify-content-center align-items-center">
+        <!--        <i class="bi bi-caret-right text-white cursor-pointer"></i>-->
+        <fa-icon [icon]="'chevron-right'" [classes]="['text-white','cursor-pointer']"></fa-icon>
+      </div>
+
+    </div>
+    <!--  Menu Usuarios -->
+    <div>
+      <div class="btn-group" dropdown>
+        <div id="button-basic" dropdownToggle type="button" class=" d-flex align-items-center border-0 rounded-4 user-menu">
+          <img src="./assets/images/perfil-img-fixed.jpg" class="rounded-circle img-fluid ms-1" id="foto-perfil" alt="...">
+          <h6 class="text-white my-auto mx-2">DiJounas</h6>
+          <i class="bi bi-caret-down-fill text-white my-auto me-2"></i>
+        </div>
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu dropdown-menu-right"
+            role="menu" aria-labelledby="button-basic">
+          <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+          <li class="divider dropdown-divider"></li>
+          <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</nav>

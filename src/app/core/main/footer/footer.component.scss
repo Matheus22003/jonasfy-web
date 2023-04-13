@@ -1,0 +1,9 @@
+@import '../../../../assets/styles/sizes';
+@import '../../../../assets/styles/colors';
+
+.footer {
+  height: $footer-height;
+  background-color: #181818;
+  border-top: 1px solid hsla(0,0%,100%,.1);
+  //line-height: 50px;
+}

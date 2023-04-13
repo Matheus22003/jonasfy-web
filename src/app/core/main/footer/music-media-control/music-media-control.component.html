@@ -1,0 +1,18 @@
+<!-- controle midia-->
+<div class="d-flex align-items-center justify-content-center">
+  <i class="bi bi-shuffle text-white media-control-size-second me-2 cursor-pointer opacity-animation"></i>
+  <i class="bi bi-skip-start-fill text-white media-control-size cursor-pointer opacity-animation"></i>
+  <div class="d-flex justify-content-center container-play-button">
+    <i class="bi bi-play-circle-fill text-white media-control-size cursor-pointer opacity-animation" id="playButton"
+       (click)="buttonPlayCick()"></i>
+  </div>
+  <i class="bi bi-skip-end-fill text-white media-control-size cursor-pointer opacity-animation"></i>
+  <i class="bi bi-repeat text-white media-control-size-second ms-2 cursor-pointer opacity-animation "></i>
+</div>
+<!-- Progess bar/ Form range-->
+<div class="d-flex align-items-center">
+  <small class="text-white">{{valueMusicSlider * 1000 | date:'mm:ss'}}</small>
+  <jonasfy-slider [(valueMusicSlider)]="valueMusicSlider" [max]="max" [min]="min" [idSlider]="'music'"
+                  class="mx-2 w-100 d-flex"></jonasfy-slider>
+  <small class="text-white">{{max * 1000 | date:'mm:ss'}}</small>
+</div>

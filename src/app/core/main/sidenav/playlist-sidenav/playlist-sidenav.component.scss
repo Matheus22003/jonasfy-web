@@ -1,0 +1,43 @@
+@import '../../../../../assets/styles/colors';
+@import '../../../../../assets/styles/sizes';
+
+.playslist-picture-size {
+  width: 30px;
+  height: 30px;
+}
+
+.playslists {
+  height: calc($sidebar-height - $sidenav-menu-size - ($playlist-fixed-size * 2.2));
+}
+
+.container-playslists {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.container-playslists::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+}
+
+.container-playslists::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.container-playslists::-webkit-scrollbar-thumb {
+  background-color: $cinza-claro;
+  transition: all 0.3s ease-in-out;
+}
+
+.container-playslists::-webkit-scrollbar-thumb:hover {
+  background-color: greenyellow;
+}
+
+.musicas-curtidas {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(141deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 255, 255, 1) 100%);
+}
+
+.meus-podcasts {
+  background-color: $verde-escuro-podcast;
+}

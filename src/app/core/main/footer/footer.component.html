@@ -1,0 +1,28 @@
+<footer class="footer">
+  <div class="d-flex align-items-center row mt-3">
+    <app-music-info class="d-flex align-items-center col-4"></app-music-info>
+
+    <app-music-media-control class="col-4"></app-music-media-control>
+
+    <div class="col-4 d-flex align-items-center justify-content-end">
+
+      <!-- Volume-->
+      <div class="d-flex align-items-center me-2">
+        <i class="bi bi-volume-down text-white" style="font-size: 22px;"></i>
+        <jonasfy-slider class="mb-2"
+                        [(valueMusicSlider)]="volume"
+                        idSlider="volume"
+                        [max]="100"
+                        [min]="0">
+        </jonasfy-slider>
+      </div>
+
+      <!-- Risize-->
+      <div class="">
+        <i class="bi bi-arrows-angle-expand text-white media-control-size cursor-pointer"></i>
+        <!--        <i class="bi bi-arrows-angle-contract text-white media-control-size"></i>-->
+      </div>
+    </div>
+  </div>
+
+</footer>

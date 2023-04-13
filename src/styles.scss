@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'assets/styles/colors';
+@import 'assets/styles/sizes';
+
+
+.color-cinza-escuro {
+  color: $cinza-escuro;
+}
+
+.main {
+  background-color: #121212;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-playlist {
+  background-color: $color-playslist-home-page;
+  border: 3px solid $color-playslist-home-page;
+}

@@ -1,0 +1,28 @@
+.card-palyslit-principal {
+  height: 80px;
+  transition: all .3s ease;
+  background-color: hsla(0, 0%, 100%, .1);
+}
+
+
+.card-palyslit-principal:hover {
+  background: hsla(0, 0%, 100%, .2);
+
+  .btn-play {
+    opacity: 1;
+  }
+}
+
+.btn-play {
+  transition: all .3s;
+  opacity: 0;
+}
+
+.card-palyslit-principal img {
+  width: 80px;
+}
+
+.playlist-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
