@@ -18,8 +18,7 @@ export class PlaylistRecenteCardComponent {
     const r = Number(colors[0]);
     const g = Number(colors[1]);
     const b = Number(colors[2]);
-    // document.documentElement.style.setProperty('--color-playslist-home-page', `rgb(${r/4}, ${g / 5}, ${b/3})`);
-    document.documentElement.style.setProperty('--color-playslist-home-page', `rgb(${r / 3.5}, ${g / 4.5}, ${b / 2.5})`);
-    // document.documentElement.style.setProperty('--color-playslist-home-page', `rgb(${r}, ${g}, ${b})`);
+    let rgb = `rgb(${r / 3.5}, ${g / 4.5}, ${b / 2.5})`;
+    document.documentElement.style.setProperty('--color-playslist-home-page', `${rgb} `);
   }
 }
