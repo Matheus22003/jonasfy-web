@@ -2,18 +2,17 @@
   <div class="container-fluid">
     <div class="mx-2" id="container-home">
       <h2 class="text-white">{{this.boasVindasMsg}}</h2>
-      <!-- playlist-->
-      <div class="row mt-4">
-        <!-- Playlist card-->
-        <playlist-recente-card
-          playlistImg="https://cdn.discordapp.com/attachments/997567071435108352/1096455734247559339/testee.jpg"
-          class="col-4"></playlist-recente-card>
-        <playlist-recente-card
-          playlistImg="https://media.discordapp.net/attachments/997567071435108352/1096455734503415941/musicasCurtidas.png"
-          class="col-4"></playlist-recente-card>
+      <app-ultimas-playslists-tocadas></app-ultimas-playslists-tocadas>
+
+      <div class="row">
+        <h2 class="my-4"><a href="" class="text-white text-decoration-none titulo-playlist">Seus mixeis mais ouvidos</a></h2>
+
+        <div>
+          <jonasfy-music-card></jonasfy-music-card>
+        </div>
       </div>
+
     </div>
 
   </div>
-
 </div>

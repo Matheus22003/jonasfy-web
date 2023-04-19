@@ -3,17 +3,20 @@ import {CommonModule} from '@angular/common';
 import {JonasfySliderComponent} from './component/jonasfy-slider/jonasfy-slider.component';
 import {FormsModule} from "@angular/forms";
 import { JonasfyPlaylistPlayComponent } from './component/jonasfy-playlist-play/jonasfy-playlist-play.component';
+import { JonasfyMusicCardComponent } from './component/jonasfy-music-card/jonasfy-music-card.component';
 
 
 @NgModule({
   declarations: [
     JonasfySliderComponent,
     JonasfyPlaylistPlayComponent,
+    JonasfyMusicCardComponent,
   ],
-  exports: [
-    JonasfySliderComponent,
-    JonasfyPlaylistPlayComponent,
-  ],
+    exports: [
+        JonasfySliderComponent,
+        JonasfyPlaylistPlayComponent,
+        JonasfyMusicCardComponent,
+    ],
   imports: [
     CommonModule,
     FormsModule
