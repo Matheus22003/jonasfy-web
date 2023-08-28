@@ -1,1 +1,13 @@
-<p>jonasfy-music-card works!</p>
+<div class="card-playlist align-content-center d-flex flex-column justify-content-center rounded-2 cursor-pointer"
+     style="width: 12rem;">
+  <img class="mx-auto mt-3 rounded-2 shadow-lg"
+       src="https://cdn.discordapp.com/attachments/997567071435108352/1096455734247559339/testee.jpg" alt="...">
+  <div class="pt-3" style="padding-left: 0.8rem">
+    <h3 class="text-white mt-1 playlist-title">Músicas Curtidas</h3>
+    <p>
+      <a *ngFor="let artista of artistas; index as i" class="link-card-playlist text-decoration-none"
+         href=""><span [ngClass]="{'is-three-dots': artista == '...' }">{{ artista }}</span><span
+        *ngIf="!(artista == '...' || i == artistas.length -2 || i == artistas.length -2)">, </span></a>
+    </p>
+  </div>
+</div>

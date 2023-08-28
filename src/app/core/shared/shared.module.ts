@@ -4,6 +4,7 @@ import {JonasfySliderComponent} from './component/jonasfy-slider/jonasfy-slider.
 import {FormsModule} from "@angular/forms";
 import { JonasfyPlaylistPlayComponent } from './component/jonasfy-playlist-play/jonasfy-playlist-play.component';
 import { JonasfyMusicCardComponent } from './component/jonasfy-music-card/jonasfy-music-card.component';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { JonasfyMusicCardComponent } from './component/jonasfy-music-card/jonasf
     JonasfySliderComponent,
     JonasfyPlaylistPlayComponent,
     JonasfyMusicCardComponent,
+    TruncatePipe,
   ],
     exports: [
         JonasfySliderComponent,
