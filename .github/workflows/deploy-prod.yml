@@ -3,7 +3,7 @@ name: Deploy Prod
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -22,7 +22,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: 18.10
+        node-version: 18.14
 
     - name: Install dependencies
       run: npm install
@@ -31,7 +31,7 @@ jobs:
     #   run: npm run test:headless
 
     - name: Build
-      run: npm run build:prod
+      run: npm run build
 
     - name: Deploy
       if: success()
