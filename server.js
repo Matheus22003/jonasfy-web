@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 
 const appName = 'jonasfy-web';
+
 app.use(express.static(__dirname + `/dist/${appName}`));
 
 app.get('/*', function (req, res) {
