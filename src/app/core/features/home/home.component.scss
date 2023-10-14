@@ -30,41 +30,41 @@ $screen-lg: 992px;
 $screen-md: 768px;
 $screen-sm: 576px;
 
-@media (min-width: $screen-sm) {
-  // Defina o número de colunas para cada tamanho de tela menor
-  @for $i from 6 through 8 {
-    .teste-card {
-      jonasfy-music-card {
-        &:nth-child(#{$i}) {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: $screen-md) {
-  // Defina o número de colunas para cada tamanho de tela menor
-  @for $i from 6 through 8 {
-    .teste-card {
-      jonasfy-music-card {
-        &:nth-child(#{$i}) {
-          display: flex;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: $screen-lg) {
-  // Defina o número de colunas para cada tamanho de tela menor
-  @for $i from 6 through 8 {
-    .teste-card {
-      jonasfy-music-card {
-        &:nth-child(#{$i}) {
-          display: flex;
-        }
-      }
-    }
-  }
-}
+//@media (min-width: $screen-sm) {
+//  // Defina o número de colunas para cada tamanho de tela menor
+//  @for $i from 6 through 8 {
+//    .teste-card {
+//      jonasfy-music-card {
+//        &:nth-child(#{$i}) {
+//          display: none;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-width: $screen-md) {
+//  // Defina o número de colunas para cada tamanho de tela menor
+//  @for $i from 6 through 8 {
+//    .teste-card {
+//      jonasfy-music-card {
+//        &:nth-child(#{$i}) {
+//          display: flex;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-width: $screen-lg) {
+//  // Defina o número de colunas para cada tamanho de tela menor
+//  @for $i from 6 through 8 {
+//    .teste-card {
+//      jonasfy-music-card {
+//        &:nth-child(#{$i}) {
+//          display: flex;
+//        }
+//      }
+//    }
+//  }
+//}

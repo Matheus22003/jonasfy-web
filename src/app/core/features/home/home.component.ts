@@ -10,6 +10,9 @@ export class HomeComponent implements OnInit {
 
   public boasVindasMsg!: string;
 
+
+  public teste = ["0", "1", "2", "3", "4", "5", "6", "7"]
+
   constructor() {
   }
 
@@ -30,4 +33,5 @@ export class HomeComponent implements OnInit {
       this.boasVindasMsg = "Boa noite";
     }
   }
+
 }

@@ -5,6 +5,7 @@ import {FormsModule} from "@angular/forms";
 import { JonasfyPlaylistPlayComponent } from './component/jonasfy-playlist-play/jonasfy-playlist-play.component';
 import { JonasfyMusicCardComponent } from './component/jonasfy-music-card/jonasfy-music-card.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import {IsVisibleDirective} from "./directives/is-visible-directive.directive";
 
 
 @NgModule({
@@ -13,12 +14,14 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     JonasfyPlaylistPlayComponent,
     JonasfyMusicCardComponent,
     TruncatePipe,
+    IsVisibleDirective,
   ],
-    exports: [
-        JonasfySliderComponent,
-        JonasfyPlaylistPlayComponent,
-        JonasfyMusicCardComponent,
-    ],
+  exports: [
+    JonasfySliderComponent,
+    JonasfyPlaylistPlayComponent,
+    JonasfyMusicCardComponent,
+    IsVisibleDirective,
+  ],
   imports: [
     CommonModule,
     FormsModule
