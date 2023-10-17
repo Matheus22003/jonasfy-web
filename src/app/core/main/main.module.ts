@@ -12,6 +12,7 @@ import {SharedModule} from "../shared/shared.module";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {BsDropdownModule} from "ngx-bootstrap/dropdown";
 import {TooltipModule} from "ngx-bootstrap/tooltip";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import {TooltipModule} from "ngx-bootstrap/tooltip";
     SharedModule,
     FontAwesomeModule,
     BsDropdownModule,
+    MatSidenavModule,
   ]
 })
 export class MainModule {

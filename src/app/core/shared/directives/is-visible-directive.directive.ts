@@ -21,9 +21,7 @@ export class IsVisibleDirective implements OnInit, OnDestroy {
     // Função de callback para o Intersection Observer
     const callback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
-        debugger
         if (!entry.isIntersecting && entry.boundingClientRect.right > window.innerWidth) {
-          debugger
           this.el.nativeElement.style.display = 'none';
           this.observer?.unobserve(this.el.nativeElement);
         } else {

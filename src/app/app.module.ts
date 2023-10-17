@@ -12,6 +12,7 @@ import {BsDropdownModule} from "ngx-bootstrap/dropdown";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {SharedModule} from "./core/shared/shared.module";
 import {HomeModule} from "./core/features/home/home.module";
+import {MatDrawerContainer} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -28,8 +29,7 @@ import {HomeModule} from "./core/features/home/home.module";
     FontAwesomeModule,
     BsDropdownModule,
     SharedModule,
-
-    HomeModule
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

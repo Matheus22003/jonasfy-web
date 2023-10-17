@@ -1,33 +1,50 @@
-<nav class="col-md-3 col-lg-2 d-md-block bg-black sidebar sidebar-sticky">
-  <!-- Logo -->
-  <div class="container  d-flex mt-2">
-    <a class="navbar-brand d-flex justify-content-center" href="#"><img class="img-fluid text-white w-75"
-                                                                        src="assets/images/logo-branco-2.svg"></a>
-  </div>
-  <!-- Menu -->
-  <div id="sidenav-menu" class="position-sticky mt-3">
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active text-white fw-semibold" href="#">
-          <i class="bi bi-house"></i>
-          Início
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white fw-semibold" href="#">
-          <i class="bi bi-search"></i>
-          Buscar
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white fw-semibold" href="#">
-          <i class="bi bi-book"></i>
-          Sua Biblioteca
-        </a>
-      </li>
-    </ul>
+<!--<nav class="col-md-3 col-lg-2 d-md-block bg-black sidebar sidebar-sticky">-->
+<!--  &lt;!&ndash; Logo &ndash;&gt;-->
+<!--  <div class="container  d-flex mt-2">-->
+<!--    <a class="navbar-brand d-flex justify-content-center" href="#"><img class="img-fluid text-white w-75"-->
+<!--                                                                        src="assets/images/logo-branco-2.svg"></a>-->
+<!--  </div>-->
+<!--  &lt;!&ndash; Menu &ndash;&gt;-->
+<!--  <div id="sidenav-menu" class="position-sticky mt-3">-->
+<!--    <ul class="nav flex-column">-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link active text-white fw-semibold" href="#">-->
+<!--          <i class="bi bi-house"></i>-->
+<!--          Início-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link text-white fw-semibold" href="#">-->
+<!--          <i class="bi bi-search"></i>-->
+<!--          Buscar-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link text-white fw-semibold" href="#">-->
+<!--          <i class="bi bi-book"></i>-->
+<!--          Sua Biblioteca-->
+<!--        </a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+
+<!--  <app-playlist-sidenav></app-playlist-sidenav>-->
+<!--</nav>-->
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="true">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+    <ng-content></ng-content>
   </div>
 
-  <app-playlist-sidenav></app-playlist-sidenav>
-</nav>
-<ng-content></ng-content>
+</mat-drawer-container>
