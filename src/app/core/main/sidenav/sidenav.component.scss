@@ -19,16 +19,22 @@
   margin-right: 0.5rem;
 }
 
-.border-div {
-  width: 2px;
-  background-color: transparent;
-  height: $sidebar-height;
-  position: fixed;
+.resize-handle {
+  cursor: ew-resize;
+  background-color: transparent; /* Você pode ajustar isso para combinar com o design */
+  width: 1px;
+  height: 100%;
+  position: absolute;
   top: 0;
-  left: $sidenav-width; /* se estiver usando col-md-3, ou ajuste conforme necessário */
-  z-index: 99999;
+  right: 0;
+  z-index: 10;
 }
-.border-div:hover{
-  background-color: #FFF;
-  cursor: col-resize;
+
+.resize-handle:hover {
+  background-color: white;
 }
+
+.resize-handle.resizing  {
+  background-color: white;
+}
+

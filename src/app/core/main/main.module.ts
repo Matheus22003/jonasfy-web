@@ -12,7 +12,6 @@ import {SharedModule} from "../shared/shared.module";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {BsDropdownModule} from "ngx-bootstrap/dropdown";
 import {TooltipModule} from "ngx-bootstrap/tooltip";
-import {DraggableItemService} from "ngx-bootstrap/sortable";
 
 
 @NgModule({
@@ -22,7 +21,7 @@ import {DraggableItemService} from "ngx-bootstrap/sortable";
     PlaylistSidenavComponent,
     NavbarComponent,
     MusicInfoComponent,
-    MusicMediaControlComponent
+    MusicMediaControlComponent,
   ],
   exports: [
     FooterComponent,

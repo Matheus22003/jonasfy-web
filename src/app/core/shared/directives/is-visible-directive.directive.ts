@@ -34,7 +34,7 @@ export class IsVisibleDirective implements OnInit, OnDestroy {
     this.observer = new IntersectionObserver(callback, config);
     this.observer.observe(this.el.nativeElement);
     window.addEventListener('resize', this.handleResize.bind(this));
-
+    window.addEventListener('sidebarResized', this.handleResize.bind(this));
   }
 
   ngOnDestroy(): void {
@@ -42,7 +42,7 @@ export class IsVisibleDirective implements OnInit, OnDestroy {
       this.observer.disconnect();
     }
     window.addEventListener('resize', this.handleResize.bind(this));
-
+    window.removeEventListener('sidebarResized', this.handleResize.bind(this));
   }
 
   private handleResize() {

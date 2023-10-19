@@ -6,6 +6,7 @@ import { JonasfyPlaylistPlayComponent } from './component/jonasfy-playlist-play/
 import { JonasfyMusicCardComponent } from './component/jonasfy-music-card/jonasfy-music-card.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
 import {IsVisibleDirective} from "./directives/is-visible-directive.directive";
+import { ResizableDirective } from './directives/resizable.directive';
 
 
 @NgModule({
@@ -15,12 +16,14 @@ import {IsVisibleDirective} from "./directives/is-visible-directive.directive";
     JonasfyMusicCardComponent,
     TruncatePipe,
     IsVisibleDirective,
+    ResizableDirective,
   ],
   exports: [
     JonasfySliderComponent,
     JonasfyPlaylistPlayComponent,
     JonasfyMusicCardComponent,
     IsVisibleDirective,
+    ResizableDirective,
   ],
   imports: [
     CommonModule,

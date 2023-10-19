@@ -1,4 +1,4 @@
-<nav class="col-md-3 col-lg-2 d-md-block bg-black sidebar sidebar-sticky">
+<nav #navbar class="col-md-3 col-lg-2 d-md-block bg-black sidebar sidebar-sticky" appResizable>
   <!-- Logo -->
   <div class="container  d-flex mt-2">
     <a class="navbar-brand d-flex justify-content-center" href="#"><img class="img-fluid text-white w-75"
@@ -29,6 +29,7 @@
   </div>
 
   <app-playlist-sidenav></app-playlist-sidenav>
+  <div class="resize-handle"></div>
 </nav>
-<span class="border-div p-0"></span>
+
 <ng-content></ng-content>
