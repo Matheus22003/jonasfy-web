@@ -1,6 +1,7 @@
 @import '../assets/styles/sizes';
 
 .main-size {
+  width: calc(100% - $sidenav-width);
   height: $sidebar-height;
   overflow-y: scroll;
 }

@@ -1,4 +1,5 @@
 :root {
+  --sidenav-width: 40vh;
   --footer-height: 100px;
   --sidebar-height: calc(100vh - var(--footer-height));
   //--playlist-fixed-size: 0px;
@@ -9,3 +10,4 @@ $sidebar-height: var(--sidebar-height);
 $playlist-fixed-size: var(--playlist-fixed-size);
 $sidenav-menu-size: var(--sidenav-menu-size);
 $sidenav-logo-size: var(--sidenav-logo-size);
+$sidenav-width: var(--sidenav-width);
